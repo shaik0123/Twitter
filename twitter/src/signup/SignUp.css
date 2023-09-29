@@ -1,0 +1,67 @@
+.closebtn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2%;
+}
+.closeX{
+    color: #ffffff;
+    border-radius: 50px;
+    border: none;
+    background-color: #000000;
+}
+.signupouter{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signuptwtmain{
+    width: 40vw;
+    height: 90vh;
+    background-color: #000000;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.signupheading{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 40px;
+}
+.twtfeilds{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+div .feilds{
+    width: 30vw;
+    border: 1px solid #908e8e68;
+    border-radius: 10px;
+    
+}
+.signupcontent{
+    width: 80%;
+    text-align: start;
+    color: #ffffff;
+}
+.signupnextmain{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: end;
+}
+.signupnext{
+    height: 6vh;
+    border-radius: 25px;
+    background-color: #e0dede89;
+    border: none;
+    width: 80%;
+    font-size: larger;
+    font-weight: 600;
+}
