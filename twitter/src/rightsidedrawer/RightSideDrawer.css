@@ -1,0 +1,54 @@
+.rightmain{
+    width: 100vw;
+    height: 100vh;
+}
+.ximg{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+.rightcontent{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#000000;
+
+}
+.iconsbtns{
+    width: 50%;
+    height: 70%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+.contentcolour{
+    color: #ffffff;
+}
+.postbtn{
+    width: 15vw;
+    height: 7vh;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight:bold;
+    font-size: large;
+    background-color: rgb(36, 147, 251);
+}
+.profile{
+    color: #ffffff;
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+    top: 10%;
+}
+.profilecontent{
+    display: flex;
+    flex-direction: column;
+}

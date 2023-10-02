@@ -38,10 +38,14 @@
     justify-content:space-around;
     align-items: center;
 }
+.twtfeild{
+    height:8vh
+}
 div .feilds{
     width: 30vw;
+    height: 95%;
     border: 1px solid #908e8e68;
-    border-radius: 10px;
+    border-radius: 5px;
     
 }
 .signupcontent{
@@ -53,15 +57,24 @@ div .feilds{
     height: 20%;
     width: 100%;
     display: flex;
-    justify-content:center;
-    align-items: end;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+.dateofbirth{
+    color:#808080;
+    background-color: #000000;
+    border: 1px solid #908e8e68;
+    border-radius: 5px;
+    width: 65vh;
+    height: 7vh;
 }
 .signupnext{
     height: 6vh;
     border-radius: 25px;
     background-color: #e0dede89;
     border: none;
-    width: 80%;
+    width: 75%;
     font-size: larger;
     font-weight: 600;
 }
