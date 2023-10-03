@@ -7,9 +7,11 @@ import TextField from '@mui/material/TextField';
 import { color } from '@mui/system';
 import SignUp from '../signup/SignUp';
 import { SignInService } from '../services/UserServices';
+import { useNavigate } from 'react-router';
 
 function Signin({setToggle}) {
     const [signintoggle,setsigninToggle]=useState(false);
+    const navigate = useNavigate();
     const [signin, setsignin] = useState({
         email: "",
         password: ""
@@ -70,6 +72,7 @@ function Signin({setToggle}) {
             let response = await SignInService(signin);
             console.log(response);
             localStorage.setItem("Token",response.data.data)
+            navigate('/dashboard')
 
         }
     }
@@ -85,8 +88,8 @@ function Signin({setToggle}) {
                     <div><button className='xsigninbtn'><img src={SignInGoogleLogo} width="15px" alt="logo" />  Sign Up With Google</button></div>
                     <div><button className='xsigninbtn'><img src={SignInAppleLogo} width="15px" alt="logo" />  Sign Up With Apple</button></div>
                     <div className='xor xors' ><hr className='xtwitterhr'></hr>or<hr className='xtwitterhr'></hr></div>
-                    <div className="twtfeildin"><TextField className='xfeilds' label="Email" variant="outlined" InputLabelProps={{style:{color:'grey'}}} InputProps={{style:{color:'white'}}} onChange={handleemail} error={errorObj.emailError} helperText={errorObj.emailHelper} /></div>
-                    <div className="twtfeildin"><TextField className='xfeilds' label="Password" variant="outlined" InputLabelProps={{style:{color:'grey'}}} InputProps={{style:{color:'white'}}} onChange={handlepassword} error={errorObj.passwordError} helperText={errorObj.passwordHelper} /></div>
+                    <div className="twtfeildin"><TextField className='xfeilds' label="Email"  variant="outlined" InputLabelProps={{style:{color:'grey'}}} InputProps={{style:{color:'white'}}} onChange={handleemail} error={errorObj.emailError} helperText={errorObj.emailHelper} /></div>
+                    <div className="twtfeildin"><TextField className='xfeilds' label="Password" variant="outlined" type="password" InputLabelProps={{style:{color:'grey'}}} InputProps={{style:{color:'white'}}} onChange={handlepassword} error={errorObj.passwordError} helperText={errorObj.passwordHelper} /></div>
                     <div><button className='xnextbtn'onClick={handlenext}>Next</button></div>
                     <div><button className='xforgotbtn'>Forgot password?</button></div>
                 </div>

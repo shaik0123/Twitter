@@ -1,0 +1,74 @@
+
+.ximg{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+}
+.leftcontent{
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#000000;
+
+}
+.iconsbtns{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 5%;
+}
+.hovereffect:hover{
+    background-color: #8080802d;
+    border-radius: 50px;
+    
+}
+.contentcolour{
+    color: #ffffff;
+}
+.postbtn{
+    width: 15vw;
+    height: 7vh;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight:bold;
+    font-size: large;
+    background-color: rgb(36, 147, 251);
+}
+.profile{
+    color: #ffffff;
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+    top: 10%;
+}
+.profilecontent{
+    display: flex;
+    flex-direction: column;
+}
+.xlogout{
+    width: 20vw;
+    height: 16vh;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    border: 1px solid  rgba(128, 128, 128, 0.564);
+    border-radius: 2px;
+    box-shadow: 0px 0px 6px #ffffff;
+}
+.logoutbtn{
+    width: 90%;
+    height: 8vh;
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    font-size: larger;
+    font-weight: 600;
+}

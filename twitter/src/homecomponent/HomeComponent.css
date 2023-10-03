@@ -1,0 +1,130 @@
+.homecomponentmain {
+    width: 44vw;
+    height: auto;
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid gray;
+}
+
+.homediv {
+    height: 10vh;
+    text-align: left;
+    font-size: larger;
+    font-weight: bold;
+    padding: 1% 0% 0% 2%;
+}
+
+.ffoptions{
+    display: flex;
+    padding: 0% 0% 2% 0%;
+}
+.for:hover,.following:hover{
+    background-color: #8080802d;
+}
+
+.for {
+    width: 50%;
+    font-size: large;
+    font-weight: 600;
+}
+
+.following {
+    width: 50%;
+    font-size: large;
+    font-weight: 600;
+}
+
+.whathappen {
+    border: 1px solid gray;
+}
+
+.avataricon {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+}
+
+#avatar {
+    width: 4vw;
+}
+
+#whatishpn {
+    font-size: larger;
+}
+.homeicons{
+    display: flex;
+    padding: 0% 0% 2% 0%;
+}
+.homeiconone{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+}
+.homeicon{
+    color: rgba(0, 0, 255, 0.803);
+}
+.homepost{
+    width: 20vw;
+    display:flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+}
+.homepostbtn{
+    width: 5vw;
+    height: 4vh;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 50px;
+    background-color:#3f8cf7;
+}
+.homehashbtn{
+    width: 2vw;
+    height: 4vh;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: larger;
+    font-weight: bold;
+    background-color:rgb(253, 154, 170);
+}
+.postdiv{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.postavatar{
+    width: 4vw;
+    display: flex;
+    justify-content: center;
+
+}
+.namedicrp{
+    width: 34vw;
+}
+.nameandid{
+    width: 37vw;
+    display: flex;
+}
+.upload{
+    color: rgba(128, 128, 128, 0.564);
+}
+.discription{
+    display: flex;
+}
+.unknown{
+    color: blue;
+}
+.moreicon{
+    width: 4vw;
+}
+.picture{
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+}
