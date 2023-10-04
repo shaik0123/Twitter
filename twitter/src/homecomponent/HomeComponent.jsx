@@ -10,12 +10,13 @@ import PlaceIcon from '@mui/icons-material/Place';
 import { Button } from '@mui/base';
 import MoreHoriz from '@mui/icons-material/MoreHoriz';
 import NatureLogo from '../images/NatureLogo.jpg';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 
 function HomeComponent() {
     return (
-        <div>
-            <div className='homecomponentmain'>
+        <div className='homecomponentmain'>
+            <div className='fixed'>
                 <div className='homediv'>
                     Home
                 </div>
@@ -23,46 +24,73 @@ function HomeComponent() {
                     <div className='for'>For you</div>
                     <div className='following'>Following</div>
                 </div>
-                <div className='whathappen'>
-                    <div className='avataricon'>
-                        <div id="avatar"><Avatar>SI</Avatar></div>
-                        <div id="whatishpn">What is happening?!</div>
-                    </div>
-                    <div className='homeicons'>
-                        <div className='homeiconone'>
-                            <div className='homeicon'><InsertPhotoIcon /></div>
-                            <div className='homeicon'><GifBoxIcon /></div>
-                            <div className='homeicon'><BallotIcon /></div>
-                            <div className='homeicon'><SentimentSatisfiedAltIcon /></div>
-                            <div className='homeicon'><WorkHistoryIcon /></div>
-                            <div className='homeicon'><PlaceIcon /></div>
-                        </div>
-                        <div className='homepost'>
-                            <Button className='homehashbtn'>#</Button>
-                            <Button className='homepostbtn'>Post</Button>
-                        </div>
-                    </div>
-                </div>
-                <div className='postdiv'>
-                    <div className='postavatar'><Avatar>SI</Avatar></div>
-                    <div className='namedicrp'>
-                        <div className='nameandid'>
-                            <div>Shaik Ismail</div>&nbsp;&nbsp;
-                            <div className='upload'>@Shaik_Ismail</div>&nbsp;&nbsp;
-                            <div className='upload'>. oct 2</div>
-                        </div>
-                        <div className='discription'>
-                            <div>Nature never goes out of style</div>&nbsp;&nbsp;
-                            <div className='unknown'> #Unknown</div>
-                        </div>
-                    </div>
-                    <div className='moreicon'>
-                        <MoreHoriz />
-                    </div>
-                </div>
-                <div className='picture'><img src={NatureLogo} alt="logo" width="500px"/></div>
             </div>
-        </div >
+            <div className='whathappen'>
+                <div className='avataricon'>
+                    <div id="avatar">
+                        {/* <Avatar>SI</Avatar> */}
+                        <AccountCircleIcon/>
+                        </div>
+                    <div id="whatishpn">What is happening?!</div>
+                </div>
+                <div className='homeicons'>
+                    <div className='homeiconone'>
+                        <div className='homeicon'><InsertPhotoIcon /></div>
+                        <div className='homeicon'><GifBoxIcon /></div>
+                        <div className='homeicon'><BallotIcon /></div>
+                        <div className='homeicon'><SentimentSatisfiedAltIcon /></div>
+                        <div className='homeicon'><WorkHistoryIcon /></div>
+                        <div className='homeicon'><PlaceIcon /></div>
+                    </div>
+                    <div className='homepost'>
+                        <Button className='homehashbtn'>#</Button>
+                        <Button className='homepostbtn'>Post</Button>
+                    </div>
+                </div>
+            </div>
+            <div className='postdiv'>
+                <div className='postavatar'>
+                    {/* <Avatar>SI</Avatar> */}
+                    <AccountCircleIcon/>
+                    </div>
+                <div className='namedicrp'>
+                    <div className='nameandid'>
+                        <div>Shaik Ismail</div>&nbsp;&nbsp;
+                        <div className='upload'>@Shaik_Ismail</div>&nbsp;&nbsp;
+                        <div className='upload'>. oct 2</div>
+                    </div>
+                    <div className='discription'>
+                        <div>Nature never goes out of style</div>&nbsp;&nbsp;
+                        <div className='unknown'> #Unknown</div>
+                    </div>
+                </div>
+                <div className='moreicon'>
+                    <MoreHoriz />
+                </div>
+            </div>
+            <div className='picture'><img src={NatureLogo} alt="logo" width="500px" /></div>
+            <div className='postdiv'>
+                <div className='postavatar'>
+                    {/* <Avatar>SI</Avatar> */}
+                    <AccountCircleIcon/>
+                    </div>
+                <div className='namedicrp'>
+                    <div className='nameandid'>
+                        <div>Shaik Ismail</div>&nbsp;&nbsp;
+                        <div className='upload'>@Shaik_Ismail</div>&nbsp;&nbsp;
+                        <div className='upload'>. oct 2</div>
+                    </div>
+                    <div className='discription'>
+                        <div>Nature never goes out of style</div>&nbsp;&nbsp;
+                        <div className='unknown'> #Unknown</div>
+                    </div>
+                </div>
+                <div className='moreicon'>
+                    <MoreHoriz />
+                </div>
+            </div>
+            <div className='picture'><img src={NatureLogo} alt="logo" width="500px" /></div>
+        </div>
     )
 }
 

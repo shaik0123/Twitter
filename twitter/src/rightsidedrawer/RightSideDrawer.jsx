@@ -4,6 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import { Button } from '@mui/base';
 
 
 
@@ -68,6 +69,7 @@ function RightSideDrawer() {
                     <div className='subscribesub'>
                         <p id="premium">Subscribe to Premium</p>
                         <p id="premiumcontent">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                        <Button className='subbtn'>Subscribe</Button>
                     </div>
                 </div>
                 <div className='trendingdiv'>

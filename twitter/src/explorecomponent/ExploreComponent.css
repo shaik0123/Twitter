@@ -1,0 +1,70 @@
+.exploremain{
+    width: 43.5vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid gray;
+}
+.exploresearch{
+    display: flex;
+    position: sticky;
+}
+.exsearch{
+    width: 90%;
+}
+.settings{
+    width: 10%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;   
+}
+.exploreoptions{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    background-color: #000000;
+    /* border: 1px solid red; */
+}
+.exhover{
+    color: rgba(128, 128, 128, 0.564);
+}
+.exhover:hover{
+    color: #ffffff;
+}
+.eximgmain{
+    background-color: #000000;
+}
+#eximg{
+    padding-top: 2%;
+}
+.extrendingmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+}
+.extrendingone{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.extrendingtwo{
+    font-weight: bold;
+}
+.extrendingtwo,.extrendingthree{
+    width: 90%;
+    text-align: start;
+}
+.extrendingone,.extrendingthree{
+    color: rgba(128, 128, 128, 0.625);
+}
+.exfixed{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    /* width: 44vw; */
+}

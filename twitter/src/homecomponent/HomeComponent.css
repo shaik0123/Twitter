@@ -1,22 +1,31 @@
 .homecomponentmain {
-    width: 44vw;
+    width: 43.5vw;
     height: auto;
     color: #ffffff;
     background-color: #000000;
     border: 1px solid gray;
 }
-
 .homediv {
     height: 10vh;
     text-align: left;
     font-size: larger;
     font-weight: bold;
     padding: 1% 0% 0% 2%;
+    background-color: black;
+    /* background-color: yellow; */
 }
+.fixed{
+    position:sticky;
+    top: 0;
+    background-color: black;
 
+}
 .ffoptions{
+    height: 6vh;
     display: flex;
-    padding: 0% 0% 2% 0%;
+    background-color: black;
+    /* background-color: yellow; */
+
 }
 .for:hover,.following:hover{
     background-color: #8080802d;
@@ -80,7 +89,8 @@
     font-weight: bold;
     font-size: large;
     border-radius: 50px;
-    background-color:#3f8cf7;
+    background-color:rgb(0, 162, 255);
+    cursor: pointer;
 }
 .homehashbtn{
     width: 2vw;
@@ -93,7 +103,7 @@
     background-color:rgb(253, 154, 170);
 }
 .postdiv{
-    height: 10vh;
+    height: 9vh;
     display: flex;
     align-items: center;
     justify-content: space-between;

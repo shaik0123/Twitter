@@ -1,0 +1,66 @@
+.notifymain{
+    width: 43.5vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid gray;
+}
+.notifysettings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.notifyoptions{
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+.notifyoption{
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.564);
+}
+.notifyoption:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+#notifysettingsicon{
+    cursor: pointer;
+}
+.firstnotify{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid gray;
+}
+#notifylogo{
+    width: 15%;
+}
+#notifymsg{
+    text-align: start;
+}
+.notifylikedpost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.559);
+}
+.notifylikemgs{
+    width: 90%;
+    display: flex;
+}
+.likeicon{
+    color: #ff0000;
+}
+.postliked{
+    width: 83%;
+    text-align: start;
+}
+.notifyfixed{
+    position:sticky;
+    top: 0;
+    background-color: #000000;
+}

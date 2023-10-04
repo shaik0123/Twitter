@@ -2,3 +2,11 @@
     position: absolute;
     display: flex;
 }
+.left{
+    position: sticky;
+    top:0;
+}
+.right{
+    position: sticky;
+    top:0;
+}

@@ -14,11 +14,11 @@ import People from '@mui/icons-material/People';
 import Pending from '@mui/icons-material/Pending';
 import { useNavigate } from 'react-router';
 
-function LeftSideDrawer() {
+function LeftSideDrawer({dispatch}) {
     const navigate = useNavigate();
     const [toggle, setToggle] = useState(false);
     const handleprofile = () => {
-        setToggle(true)
+        setToggle(!toggle)
     }
     const handlelogout=()=>{
         localStorage.removeItem("Token")
@@ -30,17 +30,17 @@ function LeftSideDrawer() {
                 <div className='ximg'><img src={DashboardLogo} alt="logo" width="40px" /></div>
                 <div className='iconsbtns'>
                     <div className='hovereffect'>
-                        <IconButton className='icon'>
-                            <div className='contentcolour'><HomeIcon /> Home</div>
+                        <IconButton className='icon' onClick={()=>dispatch('Home')}>
+                            <div className='contentcolour' ><HomeIcon /> Home</div>
                         </IconButton>
                     </div>
                     <div className='hovereffect'>
-                        <IconButton className='icon'>
+                        <IconButton className='icon' onClick={()=>dispatch('Explore')}>
                             <div className='contentcolour'>< SearchIcon /> Explore</div>
                         </IconButton>
                     </div>
                     <div className='hovereffect'>
-                        <IconButton className='icon'>
+                        <IconButton className='icon' onClick={()=>dispatch('Notification')}>
                             <div className='contentcolour'>< NotificationsIcon /> Notifications</div>
                         </IconButton>
                     </div>
