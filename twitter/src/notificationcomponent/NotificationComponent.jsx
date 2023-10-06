@@ -5,6 +5,7 @@ import NotifyLogo from '../images/X-imagelogo.png'
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import NotifyNature from '../images/NatureLogo.jpg';
+import NotifyNatureone from '../images/NatureLogo.jpeg';
 
 
 function NotificationComponent() {
@@ -52,7 +53,7 @@ function NotificationComponent() {
                 </div>
                 <div className='postliked'>#Salman liked your post</div>
                 <div>
-                    <img src={NotifyNature} alt="logo" width="550px" />
+                    <img src={NotifyNatureone} alt="logo" width="400px" />
                 </div>
             </div>
             <div className='firstnotify'>

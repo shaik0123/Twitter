@@ -10,6 +10,7 @@ import PlaceIcon from '@mui/icons-material/Place';
 import { Button } from '@mui/base';
 import MoreHoriz from '@mui/icons-material/MoreHoriz';
 import NatureLogo from '../images/NatureLogo.jpg';
+import NatureLogoone from '../images/NatureLogo.jpeg';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 
@@ -81,7 +82,7 @@ function HomeComponent() {
                         <div className='upload'>. oct 2</div>
                     </div>
                     <div className='discription'>
-                        <div>Nature never goes out of style</div>&nbsp;&nbsp;
+                        <div>Night vibes</div>&nbsp;&nbsp;
                         <div className='unknown'> #Unknown</div>
                     </div>
                 </div>
@@ -89,7 +90,7 @@ function HomeComponent() {
                     <MoreHoriz />
                 </div>
             </div>
-            <div className='picture'><img src={NatureLogo} alt="logo" width="500px" /></div>
+            <div className='picture'><img src={NatureLogoone} alt="logo" width="400px" height="350px"/></div>
         </div>
     )
 }

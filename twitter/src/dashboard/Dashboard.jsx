@@ -5,37 +5,43 @@ import RightSideDrawer from '../rightsidedrawer/RightSideDrawer'
 import HomeComponent from '../homecomponent/HomeComponent'
 import ExploreComponent from '../explorecomponent/ExploreComponent'
 import NotificationComponent from '../notificationcomponent/NotificationComponent'
+import MessageComponent from '../messagecomponent/MessageComponent'
+import ExtraMessagecomponent from '../messagecomponent/ExtraMessagecomponent'
 
 
-const initialstate =<HomeComponent/>;
+const initialstate = <HomeComponent />;
 function Dashboard() {
-   
 
-    const reducer = (state,action)=>{
-        switch(action){
+    const [toggle, settoggle] = useState(false);
+    const reducer = (state, action) => {
+        switch (action) {
             case 'Home':
-                return state=<HomeComponent/>
+                return state = <HomeComponent />
             case 'Explore':
-                return state=<ExploreComponent/>
+                return state = <ExploreComponent />
             case 'Notification':
-                return state=<NotificationComponent/>
+                return state = <NotificationComponent />
+            case 'Messages':
+                return state = <MessageComponent />
             default:
-                return state=<HomeComponent/>
+                return state = <HomeComponent />
         }
     }
 
-    const [component,dispatch]=useReducer(reducer,initialstate)
-           
+    const [component, dispatch] = useReducer(reducer, initialstate)
+
 
     return (
 
         <div className='dashboardmain'>
-            <div className='left'><LeftSideDrawer  dispatch={dispatch}/></div>
+            <div className='left'><LeftSideDrawer settoggle={settoggle} dispatch={dispatch} /></div>
             <div className='middle'>
                 {component}
             </div>
-
-            <div className='right'><RightSideDrawer /></div>
+            {toggle ?
+                <div><ExtraMessagecomponent /></div> :
+                <div className='right'><RightSideDrawer /></div>
+            }
         </div>
 
     )

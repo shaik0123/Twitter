@@ -14,7 +14,7 @@ import People from '@mui/icons-material/People';
 import Pending from '@mui/icons-material/Pending';
 import { useNavigate } from 'react-router';
 
-function LeftSideDrawer({dispatch}) {
+function LeftSideDrawer({settoggle,dispatch}) {
     const navigate = useNavigate();
     const [toggle, setToggle] = useState(false);
     const handleprofile = () => {
@@ -24,29 +24,30 @@ function LeftSideDrawer({dispatch}) {
         localStorage.removeItem("Token")
             navigate("/")
     }
+
     return (
         <div className='leftmain'>
             <div className='leftcontent'>
                 <div className='ximg'><img src={DashboardLogo} alt="logo" width="40px" /></div>
                 <div className='iconsbtns'>
-                    <div className='hovereffect'>
+                    <div className='hovereffect'onClick={()=>settoggle(false)}>
                         <IconButton className='icon' onClick={()=>dispatch('Home')}>
                             <div className='contentcolour' ><HomeIcon /> Home</div>
                         </IconButton>
                     </div>
-                    <div className='hovereffect'>
+                    <div className='hovereffect'onClick={()=>settoggle(false)}>
                         <IconButton className='icon' onClick={()=>dispatch('Explore')}>
                             <div className='contentcolour'>< SearchIcon /> Explore</div>
                         </IconButton>
                     </div>
-                    <div className='hovereffect'>
+                    <div className='hovereffect'onClick={()=>settoggle(false)}>
                         <IconButton className='icon' onClick={()=>dispatch('Notification')}>
                             <div className='contentcolour'>< NotificationsIcon /> Notifications</div>
                         </IconButton>
                     </div>
-                    <div className='hovereffect'>
-                        <IconButton className='icon'>
-                            <div className='contentcolour'>< EmailIcon /> Messages</div>
+                    <div className='hovereffect' onClick={()=>settoggle(true)}>
+                        <IconButton className='icon' onClick={()=>{dispatch('Messages')}}>
+                            <div className='contentcolour' >< EmailIcon /> Messages</div>
                         </IconButton>
                     </div>
                     <div className='hovereffect'>

@@ -1,0 +1,76 @@
+.msgmain{
+    width: 30vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background-color: #000000;
+    border: 1px solid gray;
+    overflow-y:scroll;
+}
+.msgcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.msgsearch{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.msgbtns{
+    width: 95%;
+    display: flex;
+    align-items: center;
+}
+.messagehead{
+    width: 50%;
+    text-align: start;
+}
+.msgicons{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    gap: 4%;
+}
+.msgcontent{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+}
+.msgrequesticon{
+    width: 15%;
+}
+.noofrequest{
+    width: 70%;
+    text-align: start;
+}
+.doticon{
+    width: 15%;
+    color: rgb(0, 128, 255);
+    font-size: xx-small;
+    font-weight: lighter;
+}
+.newmsgcontent{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+}
+.newmsgrequesticon{
+    width: 15%;
+}
+.newnoofrequest{
+    width: 70%;
+    text-align: start;
+}
+.msgid{
+    color: gray;
+}
+.sharedpost{
+    font-weight: bold;
+}
+.title{
+    text-align: start;
+    margin-left: 3%;
+}
